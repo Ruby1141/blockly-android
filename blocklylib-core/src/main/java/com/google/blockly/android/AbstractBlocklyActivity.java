@@ -123,14 +123,8 @@ public abstract class AbstractBlocklyActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        if (id == R.id.action_save) {
-            onSaveWorkspace();
-            return true;
-        } else if (id == R.id.action_load) {
-            onLoadWorkspace();
-            return true;
-        } else if (id == R.id.action_clear) {
+        
+        if (id == R.id.action_clear) {
             onClearWorkspace();
             return true;
         } else if (id == R.id.action_run) {
